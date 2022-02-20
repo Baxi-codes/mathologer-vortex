@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Mathologer coding competition</title>
+    </head>
+    <body>
+        <h1>Vortex!</h1>
+        <h2>Check out the <a href="https://www.youtube.com/watch?v=6ZrO90AI0c8">mathologer video for context...</a></h2>
+        <div id="control">
+            <div id="main-controls">
+                <h3>main controls</h3>
+                modulus <input type="number" id="modulus" value="9"><br>
+                multiplier <input type="number" id="multiplier" value="2"><br>                
+            </div>
+            <div id="preferences">
+                <h3>preferences</h3>
+                width <input type="number" id="width" value="720"><br>
+                height <input type="number" id="height" value="480"><br>
+                centre <input type="number" id="centrex" value="360"><input type="number" id="centrey" value="240"><br>
+                radius <input type="number" id="radius" value="180"><br>
+                arrows <input type="checkbox" id="arrows" checked="true"><br>
+                arrow width <input type="number" id="arrow-width" value="1"><br>
+                arrow head height <input type="number" id="arrow-height" value="10"><br>
+                colors <input type="checkbox" id="colors" checked="true"><br>
+            </div>
+            <button onclick="init()">Generate!</button><br>
+        </div>
+        <canvas id="diagram" width="720" height="480"></canvas>
+    </body>
+    <script async src="script.js"></script>
+</html>
